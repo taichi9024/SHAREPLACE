@@ -1,0 +1,17 @@
+<section class="background">
+<%= form_for(@post) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <div class="home">
+  <p>スペース:</p>
+  <%= f.text_field :content, class:"black" %>
+
+  <p>値段:(１時間あたり)</p>
+  <%= f.text_field :price, class:"black"%>
+  
+  <%= f.file_field :picture %>
+  
+  <%= f.submit "投稿する", class: "btn btn-primary" %>
+  </div>
+<% end %>
+</section>

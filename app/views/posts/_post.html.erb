@@ -1,0 +1,8 @@
+<section class="show_post userposts">
+<%= image_tag post.picture.url if post.picture? %>  
+<p>投稿者：<%= link_to post.user.name, post.user %></p>
+<p>金額(1時間あたり)：<%= post.price %>円</p>  
+<p>詳細：<%= post.content %></p>
+<p><%= link_to "レンタルする", post_path %></p>
+</li>
+</section>

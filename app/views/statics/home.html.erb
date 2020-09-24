@@ -1,0 +1,17 @@
+<% if logged_in? %>
+  <div class="row margin">
+    <aside class="col-md-6 col-md-offset-3 form2">
+    <h3 class="text-center margintop">あなたのスペースを投稿してみましょう</h3>
+    <section class="home">
+        <%= render 'shared/post_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <div class="margintop text-center">
+    <h1 class="hometop">SHARE PLACE</h1>
+    <br>
+    <h4 class="blue bold">営業時間外に収益を上げませんか？</h4>
+  <%= link_to "ログイン", login_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <% end %>

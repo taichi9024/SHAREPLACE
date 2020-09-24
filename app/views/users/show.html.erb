@@ -1,0 +1,22 @@
+<% provide(:title, @user.name) %>
+<body class="main-container2">
+<div class="row">
+  <aside class="col-md-4">
+      <h1 class="margintop">
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+  </aside>
+  <div class="col-md-8">
+  <% if @user.posts.any? %>
+    <h3 class="margintop">投稿数 (<%= @user.posts.count %>)</h3>
+    <ol class="userpost">
+      <%= render @posts %>
+    </ol>
+<div class="paginate"><%= will_paginate @posts %></div>
+
+  <% end %>
+  
+</div>
+</div>
+</body>

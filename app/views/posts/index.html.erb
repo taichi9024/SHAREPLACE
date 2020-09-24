@@ -1,0 +1,19 @@
+<div class="col-md-8 ">
+<% if @posts.any? %>
+  <h3 class="margintop">投稿数 (<%= @posts.count %>)</h3>
+  <ol class="posts">
+    <% @posts.each do |post|%>
+<section class="show_post">
+<%= image_tag post.picture.url if post.picture? %>  
+<p>投稿者：<%= link_to post.user.name, post.user %></p>
+<p>金額(1時間あたり)：<%= post.price %>円</p>  
+<p>詳細：<%= post.content %></p>
+</li>
+</section>
+<% end %>
+  </ol>
+<div class="paginate1"><%= will_paginate @posts %></div>
+
+<% end %>
+
+</div>

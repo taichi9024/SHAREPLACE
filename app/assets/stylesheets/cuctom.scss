@@ -1,0 +1,158 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html{
+  width: 100%;
+}
+body {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+ color: white; 
+}
+.home{
+  margin: 0 auto;
+}
+.homenav{
+  font-size:20px;
+  list-style: none;
+  text-decoration:none ;
+}
+
+.homenav a{
+  margin-right: 15px;
+  color: white;
+}
+//application
+.logo{
+  padding-top: 7px;
+}
+#logo{
+  font-size: 45px;
+  padding-top: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+// users index
+.margintop{
+  margin-top: 50px; 
+}
+.list-between{
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 20px;
+}
+.listname{
+  margin-left: 10px;
+}
+
+// users show 
+.userpost{
+  width: 300px;
+}
+.posts{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  background-color:gray;
+}
+.show_post{
+  margin: 30px auto;
+  width: 300px;
+}
+.show_post li p{
+  margin-top: 5px;
+  font-size: 20px;
+}
+.show_post img{
+  width: 300px;
+  height: 200px;
+} 
+.paginate1{
+  margin-left: 150px;
+  padding-left: 200px;
+}
+
+// users edit
+.edit{
+  margin-top: 30px;
+}
+.label{
+  margin-top: 3px;
+}
+
+// home
+
+.home{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.margin{
+  margin-top: 20px;
+}
+.hometop{
+  font-size: 50px;
+  margin-top: 140px;
+  color: white;
+}
+.blue{
+  color:#337ab7;
+}
+.bold{
+  font-weight: bolder;
+}
+
+.main-container {
+  background-image: url("/images/main2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home p{
+  padding-top: 5px;
+}
+//about
+.about{
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: gray;
+  opacity: 0.8;
+  padding: 10px;
+}
+.gray{
+  color: gray;
+}
+
+.form{
+  background-color: gray;
+  opacity: 0.8;
+  margin-top: 70px;
+  border-radius: 10px;
+}
+.form2{
+  background-color: gray;
+  opacity: 0.8;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.black{
+  color: black;
+}
+.margin2{
+  margin-left: 330px ;
+}
+#text{
+  display: none;
+}
+
+.userposts{
+  background-color: gray;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+.userpost p{
+  padding: 4px;
+}

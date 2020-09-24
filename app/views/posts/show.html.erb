@@ -1,0 +1,11 @@
+<h1 class="text-center margintop">お支払い</h1>
+
+<div class="text-center margintop">
+<%= form_tag(action: :pay, method: :post) do %>
+  <script type="text/javascript"
+    src="https://checkout.pay.jp"
+    class="payjp-button"
+    data-key="pk_test_0383a1b8f91e8a6e3ea0e2a9">
+  </script>
+<% end %>
+</div>
